@@ -19,9 +19,7 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: "module",
   },
-  "plugins": [
-    "cypress"
-  ],
+  plugins: ["cypress"],
   rules: {
     "arrow-parents": [0, "as-needed"],
     "require-jsdoc": "off",
