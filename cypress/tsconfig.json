@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "allowJs": true,
+      "target": "es6",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "removeComments": true,
+      "noImplicitAny": false,
+      "outDir": "src",
+      "types": ["cypress", "mocha", "chai-string"],
+      "sourceMap": true,
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+    },
+    "exclude": ["node_modules"],
+    "compileOnSave": false
+  }

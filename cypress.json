@@ -1,0 +1,19 @@
+{
+  "projectId": "6k4efr",
+  "viewportWidth": 1920,
+  "viewportHeight": 1440,
+  "PageLoadTimeout" : 60000,
+  "responseTimeout" : 20000,
+  "reporterEnabled": "spec, json",
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+      "reporterEnabled": "mochawesome",
+      "mochawesomeReporterOptions": {
+          "reportDir": "cypress/reports/mocha",
+          "quite": false,
+          "overwrite": false,
+          "html": false,
+          "json": true
+      }
+  }
+}
