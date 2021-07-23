@@ -28,7 +28,7 @@ Choose one of the following options:
 
 3. Install your favorite IDE. I used [VS Code](https://code.visualstudio.com/download) for this.
 
-4. Clone the git repo — `https://github.com/vora/eqa-UI-tests.git`.
+4. Clone the git repo — `https://github.com/ianoroceo/Cypress.git`.
 
 5. Run `npm install` to install the node packages
 

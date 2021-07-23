@@ -15,20 +15,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vora/eqa-UI-tests.git"
+    "url": "git+https://github.com/ianoroceo/Cypress.git"
   },
   "keywords": [
     "Cypress",
-    "Ascendum",
-    "UI",
-    "Automation"
+    "UI Tests",
+    "UI Automation Tests"
   ],
   "author": "Ian Oroceo",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vora/eqa-UI-tests/issues"
+    "url": "https://github.com/ianoroceo/Cypress/issues"
   },
-  "homepage": "https://github.com/vora/eqa-UI-tests#readme",
+  "homepage": "https://github.com/ianoroceo/Cypress#readme",
   "devDependencies": {
     "cypress": "^8.0.0",
     "cypress-multi-reporters": "^1.5.0",
