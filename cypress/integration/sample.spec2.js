@@ -3,7 +3,7 @@ const url = Cypress.env("URL");
 import navBarText from "../fixtures/navBar.json";
 import primaryGridColText from "../fixtures/primaryGridCol.json";
 
-describe("Open Homepage Test 2", () => {
+describe("Open Homepage Test without using page objects", () => {
   beforeEach(() => {
     cy.visit(url);
   });
