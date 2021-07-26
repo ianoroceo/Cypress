@@ -1,19 +1,19 @@
-const url = Cypress.env("URL");
-
 import navBarText from "../fixtures/navBar.json";
 import primaryGridColText from "../fixtures/primaryGridCol.json";
 
-describe("Open Homepage", () => {
+import HomePage from "./pages/home.page";
+
+describe("Open Homepage tests  with page objects", () => {
   beforeEach(() => {
-    cy.visit(url);
+    HomePage.open();
+    HomePage.waitForIsShown();
   });
 
   it("Should display Nav Bar Options", () => {
-    const mainNavObject = "#main-nav li";
     const navBarTextLength = navBarText.length;
 
-    cy.get(mainNavObject).should("have.length", navBarTextLength);
-    cy.get(mainNavObject).each((item, idx) => {
+    HomePage.mainNavObjects.should("have.length", navBarTextLength);
+    HomePage.mainNavObjects.each((item, idx) => {
       /**
        * Two ways to check if each element contains text
        * (1) Convert the element to Cypress object via wrap
@@ -29,9 +29,7 @@ describe("Open Homepage", () => {
   });
 
   it("Should display Grid Primary Columns", () => {
-    const primaryColObject = '[ref="agLabel"]';
-
-    cy.get(primaryColObject)
+    HomePage.primaryColObjects
       .then(($els) => {
         console.log(cy.$$($els));
 
@@ -44,7 +42,7 @@ describe("Open Homepage", () => {
         expect(length).to.eq(primaryGridColText.length); // validates that count from the array is same as the length of the data set
       });
 
-    cy.get(primaryColObject).each((item, idx) => {
+    HomePage.primaryColObjects.each((item, idx) => {
       const elText = Cypress.$(item).text();
       const textValue = elText.trim();
 
